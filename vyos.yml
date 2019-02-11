@@ -13,6 +13,7 @@
     - name: backup and load from file
       vyos_config:
         src: "{{ vyOSConfig }}"
+        save: yes
 
     - name: reboot the VyOS router
       vyos_command:
